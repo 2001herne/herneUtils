@@ -1,0 +1,8 @@
+if [[ $# != 1 ]]; then
+    echo "Needs a filename to opperate on"
+    exit 0
+fi
+
+touch "$1"
+chmod +x "$1"
+nano "$1"
